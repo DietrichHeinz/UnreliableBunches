@@ -133,3 +133,43 @@ footer p {
 .clearfix {
   clear: both;
 }
+
+.dialogue {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0px 0px 10px 2px #000;
+}
+
+.dialogue-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dialogue-header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.character-name {
+  margin: 0;
+  color: #fff;
+}
+
+.character-title {
+  margin: 0;
+  color: #8f8f8f;
+  font-size: 14px;
+}
+
+.dialogue-body {
+  color: #fff;
+}
+
+.dialogue-text {
+  margin-bottom: 10px;
+}
