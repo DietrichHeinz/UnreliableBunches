@@ -1,82 +1,160 @@
-/* Reset */
+html {
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+}
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/* Global Styles */
-body {
-	font-family: Arial, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
+.container {
+    width: 75%;
+    margin:0 auto;
 }
 
-/* Hero Section Styles */
-#hero-section {
-	height: 100vh;
-	background-color: #000;
-	position: relative;
+@media(max-width: 1400px) {
+    .container {
+        width: 80%;
+    }    
 }
 
-.cat-image {
-	background-image: url("https://source.unsplash.com/random/1920x1080/?cat");
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-	transition: opacity .5s ease-in-out;
+@media(max-width: 1280px) {
+    .container {
+        width: 85%;
+    }    
 }
 
-.scroll-down {
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	transform: translateX(-50%);
-	color: #fff;
-	text-align: center;
-	opacity: 1;
-	transition: opacity .5s ease-in-out;
+@media(max-width: 992px) {
+    .container {
+        width: 90%;
+    }    
 }
 
-.scroll-down span {
-	font-size: 1.2rem;
+@media(max-width: 768px) {
+    .container {
+        width: 95%;
+        margin:auto;
+    }    
 }
 
-.arrow {
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	display: inline-block;
-	padding: 5px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+
+/*story style*/
+
+.story-pages {
+    padding: 6rem 0;
+    margin-top: -3px;
+    background:url('imgs/scairi.jpg');
 }
 
-.hide {
-	opacity: 0;
-	visibility: hidden;
+.story-block h2 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;;
+    color:#fff;
+    margin-bottom:1rem;
 }
 
-/* Cat Section Styles */
-#cat-section {
-	height: 100vh;
-	background-color: #fff;
-	position: relative;
+.story-block img {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
-#cat-section .cat-image {
-	background-image: url("https://source.unsplash.com/random/1920x1080/?cat");
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: opacity .5s ease-in-out;
+.story-block {
+    background:#111212;
+    padding: 2rem;
+    border-radius: 10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    border: 1px solid #fff;
+}
+
+.story-block p {
+    color:#fff;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+.story-block-wrapper {
+    width: 90%;
+    flex: 0 0 90%;
+
+}
+
+.story-content {
+    display: none;
+    transition: 0.3s;
+}
+
+.page-content-active {
+    display: block;
+}
+
+.story-block-controls {
+    width: 7%;
+    flex: 0 0 7%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 1rem;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.page-dot {
+    background: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: dotted 1px #fff;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.page-dot-active {
+    background: #fff;
+}
+
+.control-spacer {
+    height:1rem;
+    border: dotted 1px #fff;
+}
+
+@media(max-width: 768px) {
+    .story-block-controls {
+        position: fixed;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        left: 0;
+        background: #111212;
+        padding-bottom: 1rem;
+        bottom: 49px;
+    }
+
+    .control-spacer {
+        height:0;
+        width: 1rem;
+    }
+
+    .story-block-wrapper {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .story-block {
+        padding: 0;
+    }
+
+    .story-content {
+        padding: 1.5rem;
+    }
+
+    .story-block-controls {
+        border-radius: 10px 10px 0 0;
+    }
 }
