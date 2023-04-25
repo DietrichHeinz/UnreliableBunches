@@ -1,24 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Random Cat Images</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<section id="hero-section">
-		<div class="cat-image"></div>
-		<div class="scroll-down">
-			<span>Scroll Down</span>
-			<div class="arrow"></div>
-		</div>
-	</section>
+<!doctype html>
 
-	<section id="cat-section">
-		<div class="cat-image"></div>
-	</section>
+<html>
+    <head>
+        <title>site do limão</title>
+        <meta name="description" content="Lorem ipsum dolor sit amet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="script.js"></script>
-</body>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,500;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fullbanner.css">
+        <link rel="stylesheet" href="audio.css">
+
+        <script src="jquery.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+
+
+    <div class="audio-player">
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="controls">
+          <div class="play-container">
+            <div class="toggle-play play">
+          </div>
+          </div>
+          <div class="time">
+            <div class="current">0:00</div>
+            <div class="divider">/</div>
+            <div class="length"></div>
+          </div>
+          <div class="name">Placeholder audio</div>
+      <!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+          <div class="volume-container">
+            <div class="volume-button">
+              <div class="volume icono-volumeMedium"></div>
+            </div>
+            
+            <div class="volume-slider">
+              <div class="volume-percentage"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <body>
+        <main>
+            <section class="fullbanner">
+                <div class="fullbanner-wrapper">
+                    <img src="imgs/scairi.jpg" alt="banner">
+                    
+                    <div class="fullbanner-txt">
+                        <h1>LOREM IPSUM DOLOR SIT AMET</h1>
+
+                        <p>LOREM IPSUM DOLOR SIT AMET</p>
+                    </div>
+
+                    <div id="smoke">
+                        <img src="imgs/smoke.png" alt=""/>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="story-pages">
+
+                <div class="story-block container">
+                    <div class="story-block-wrapper">
+                        <div class="story-content page-content-active" page="1">
+                            <h2>LOREM IPSUM DOLOR</h2>
+
+                            <img src="https://via.placeholder.com/1920x400" alt="" />
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+                        </div>
+
+                        <div class="story-content" page="2">
+                            <h2>LOREM IPSUM DOLOR 2</h2>
+
+                            <img src="https://via.placeholder.com/1920x400" alt="" />
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+                        </div>
+
+                        <div class="story-content" page="3">
+                            <h2>LOREM IPSUM DOLOR 3</h2>
+
+                            <img src="https://via.placeholder.com/1920x400" alt="" />
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia nibh, rhoncus vulputate nisl. In rutrum tristique placerat. Nam non est nisi. Quisque a fermentum arcu. Ut scelerisque eros varius sem imperdiet pharetra. Etiam nec turpis nec lectus commodo consequat eget nec massa. Fusce ullamcorper libero mattis dolor blandit sodales. Etiam vitae erat elit. Duis sed sem fermentum, lacinia arcu vel, consectetur dui. Mauris euismod sapien enim, nec maximus ipsum dapibus a. Aliquam dapibus sem nec ante ornare, eu mollis mauris vestibulum.</p>
+                        </div>
+                    </div>
+
+                    <div class="story-block-controls">
+                        <button class="page-dot page-dot-active" page="1"></button>
+
+                        <span class="control-spacer"></span>
+
+                        <button class="page-dot" page="2"></button>
+
+                        <span class="control-spacer"></span>
+
+                        <button class="page-dot" page="3"></button>
+                    </div>
+                </div>
+
+                
+            </section>
+        </main>
+    </body>
 </html>
